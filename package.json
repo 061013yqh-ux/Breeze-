@@ -1,0 +1,16 @@
+{
+  "name": "breeze-music",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node worker/build.mjs",
+    "dev": "node worker/dev.mjs --build",
+    "start": "node worker/dev.mjs",
+    "test": "node worker/build.mjs && node --test"
+  },
+  "dependencies": {
+    "crypto-js": "4.2.0",
+    "esbuild": "0.28.1",
+    "qrcode-generator": "2.0.4"
+  }
+}
